@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+.modgit/
+app/etc/local.xml
+wp/wp-content/uploads/
+get.php
+index.php.sample
+/var/
+/media/
+wp/wp-config.php
+landing/upload/
+/.idea/
+/errors/local.xml
