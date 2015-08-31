@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Icube_Testpayment>
+             <version>0.1.0</version>
+        </Icube_Testpayment>
+    </modules>
+    <global>
+        <models>
+            <testpayment>
+                <class>Icube_Testpayment_Model</class>
+            </testpayment>
+        </models>
+        <resources>
+            <testpayment_setup>
+                <setup>
+                    <module>Icube_Testpayment</module>
+                    <class>Mage_Sales_Model_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </testpayment_setup>
+        </resources>
+        <blocks>
+            <testpayment>
+                <class>Icube_Testpayment_Block</class>
+            </testpayment>
+        </blocks>
+        <fieldsets>
+            <sales_convert_quote_payment>
+                <numbername>
+                    <to_order_payment>*</to_order_payment>
+                </numbername>
+            </sales_convert_quote_payment>
+        </fieldsets>
+    </global>
+    <default>
+        <payment>
+            <testpayment>
+                <active>1</active>
+                <model>testpayment/testpayment</model>
+                <title>Test Payment Method</title>
+            </testpayment>
+        </payment>
+    </default>
+</config>
